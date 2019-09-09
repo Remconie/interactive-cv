@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<title>My system</title>
+</head>
+<body>
+  <div class="terminal" id="terminal">
+  	<p>$ Welcome to my system!</p>
+  	<p>$ My name is Remco Nieberg, a creative and critical thinker and worker. I'm curious and eager to learn.</p>
+    <p>$ I'm passionate about getting to know the world around me and how things work and relate to eachother.</p>
+    <p>$ Working together with others to learn from eachother and create new ideas, insights and solutions is one of the biggest thrills, I believe.</p>
+    <p>$ Please feel welcome to look around in my system! You can use the basic commands cd, followed by the directory you want to navigate to, and ls..</p>
+    <p>$ ..or just use the buttons below this terminal window ;-)</p>
+  	<p id="inputField">
+  		<string id="prompt">directories</string> $ <input type="text" id="commands" onkeydown="checkEnter(event, this)" autofocus>
+ 	</p>
+  <p class="terminal-instructions">Commands: [cd] &lt;directory&gt; - change directory -- [ls] list items and directories</p>
+  </div>
+  <div class="dropdown" id="personalia" onclick="showDetails(this)">
+    personalia
+  </div>
+  <div class="dropdown" id="education" onclick="showDetails(this)">
+    education
+  </div>
+  <div class="dropdown" id="certificates" onclick="showDetails(this)">
+    certificates
+  </div>
+  <div class="dropdown" id="skills" onclick="showDetails(this)">
+    skills
+  </div>
+  <div class="dropdown" id="interests" onclick="showDetails(this)">
+    interests
+  </div>
+  </body>
+</html>
